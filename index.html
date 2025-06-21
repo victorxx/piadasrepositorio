@@ -84,9 +84,24 @@
                         <header>
                             <h1>Piadas Engraçadas - Ria Sem Parar!</h1>
                             <p>Uma seleção das melhores piadas e trocadilhos para você se divertir!</p>
+                            
                         </header>
                         <div id="ads2">
                             <a id="ads" href="#" target="_blank">CONFIRA ESSA OPORTUNIDADE!</a>
+                            <p>Aproveite antes de fechar!</p>
+                            <div id="atualizado" style="font-size: 10px; font-weight: bold; color: #28a745; text-align: center; margin: 30px 0;">
+                            CONTEÚDO ATUALIZADO<br>
+                            <span id="data-atual" style="font-size: 24px; color: #555;"></span>
+                            </div>
+
+                            <script>
+                            const hoje = new Date();
+                            const opcoes = { day: 'numeric', month: 'long', year: 'numeric' };
+                            const dataFormatada = hoje.toLocaleDateString('pt-BR', opcoes);
+                            document.getElementById('data-atual').textContent = dataFormatada;
+                            </script>
+
+
                         </div>
                         <main>
 
